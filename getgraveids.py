@@ -89,7 +89,7 @@ numids = 0
 # with open('tree.ged', encoding='utf8') as ged:
 #     for line in ged.readlines():
 #         numcites+=1
-#         if '_LINK http://www.findagrave.com' in line:
+#         if '_LINK ' in line and 'findagrave.com' in line:
 #             for unit in line.split('&'):
 #                 if 'GRid=' in unit:
 #                     if unit[5:-1] not in graveids:
