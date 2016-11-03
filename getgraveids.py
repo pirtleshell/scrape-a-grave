@@ -114,14 +114,14 @@ with open('input.txt', encoding='utf8') as txt:
 parsed = 0
 failedids = []
 for i,gid in enumerate(graveids):
-    # try:
-    print(str(i+1) + ' of ' + str(numids))
-    print(findagravecitation(gid)+'\n\n')
-    parsed += 1
-    # except:
-    #     print('Unable to parse Memorial #'+str(gid)+'!\n\n')
-    #     print("Error:", sys.exc_info()[0])
-    #     failedids.append(gid)
+    try:
+        print(str(i+1) + ' of ' + str(numids))
+        print(findagravecitation(gid)+'\n\n')
+        parsed += 1
+    except:
+        print('Unable to parse Memorial #'+str(gid)+'!\n\n')
+        print("Error:", sys.exc_info()[0])
+        failedids.append(gid)
 
 out = 'Successfully parsed ' + str(parsed) + ' of '
 out += str(len(graveids))

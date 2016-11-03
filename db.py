@@ -6,7 +6,7 @@ def makeGraveDatabase():
     conn = sql.connect('graves.db')
     c = conn.cursor()
     c.execute('''CREATE TABLE findAGrave
-        (id INTEGER IDENTITY, INTEGER PRIMARY KEY, url TEXT,
+        (graveid INTEGER PRIMARY KEY, url TEXT,
          name TEXT, birth TEXT, birthplace TEXT, death TEXT, deathplace TEXT,
          burial TEXT, plot TEXT, more_info BOOL)''')
     conn.close()
