@@ -17,4 +17,7 @@ The citations will be printed to the console and saved in an SQL database named 
 
 
 ## License
+
+This is intended as a convenient tool for personal genealogy research. Please be aware of FindAGrave's [Terms of Service](https://secure.findagrave.com/terms.html).
+
 MIT © [Robert Pirtle](https://pirtle.xyz)
